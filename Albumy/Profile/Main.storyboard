@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0aT-p1-9dP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="Albumy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cW-T8-zP6">
+                                <rect key="frame" x="8" y="92" width="398" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Profile">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="35"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxC-zZ-si2">
+                                <rect key="frame" x="8" y="142" width="398" height="26.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Leanne Graham">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="22"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kulas Ligh, Apt. 556, Gwenborough, 92998-3874" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X9-Ds-HCB">
+                                <rect key="frame" x="8" y="172.5" width="398" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KcC-Wb-aiJ">
+                                <rect key="frame" x="8" y="201" width="398" height="661"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileViewController" id="0Ya-4N-yL6">
+                                        <rect key="frame" x="0.0" y="44.5" width="398" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Ya-4N-yL6" id="Yvf-4G-aaR">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6cW-T8-zP6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="Cww-WQ-sXP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KcC-Wb-aiJ" secondAttribute="trailing" constant="8" id="Ey3-VY-CEG"/>
+                            <constraint firstItem="KcC-Wb-aiJ" firstAttribute="top" secondItem="1X9-Ds-HCB" secondAttribute="bottom" constant="8" id="Khx-Cf-fXh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yxC-zZ-si2" secondAttribute="trailing" constant="8" id="Nlc-Cw-LAF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KcC-Wb-aiJ" secondAttribute="bottom" id="Nqb-vA-knW"/>
+                            <constraint firstItem="KcC-Wb-aiJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="OBE-D1-tiH"/>
+                            <constraint firstItem="yxC-zZ-si2" firstAttribute="top" secondItem="6cW-T8-zP6" secondAttribute="bottom" constant="8" id="QjB-BI-07U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6cW-T8-zP6" secondAttribute="trailing" constant="8" id="RiZ-ee-FPG"/>
+                            <constraint firstItem="1X9-Ds-HCB" firstAttribute="top" secondItem="yxC-zZ-si2" secondAttribute="bottom" constant="4" id="Sfc-BU-h8L"/>
+                            <constraint firstItem="6cW-T8-zP6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Xr2-4J-fXk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1X9-Ds-HCB" secondAttribute="trailing" constant="8" id="aE0-Pt-bRG"/>
+                            <constraint firstItem="yxC-zZ-si2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="bNi-5F-Q4b"/>
+                            <constraint firstItem="1X9-Ds-HCB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="pwg-c7-l9l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="02e-6y-CEe"/>
+                    <connections>
+                        <outlet property="albumsTabeleView" destination="KcC-Wb-aiJ" id="HPX-Sj-gsx"/>
+                        <outlet property="userAdressLabel" destination="1X9-Ds-HCB" id="OoZ-WW-lEg"/>
+                        <outlet property="userNameLabel" destination="yxC-zZ-si2" id="8W6-zS-rSU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tz2-AW-IjX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0aT-p1-9dP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Qa-PR-v4Z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QTR-x5-6hx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jqy-5w-V5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
