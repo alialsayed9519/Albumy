@@ -4,5 +4,6 @@ App is composed of 2 screens
 First is the profile screen that have user name, address and a list of user albums.
 Second screen is an album details screen which have albums photos and list them in alist like instagram. you can filter within the album by the image title
 
+
 ### Screens
 
