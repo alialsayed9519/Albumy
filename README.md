@@ -7,3 +7,4 @@ Second screen is an album details screen which have albums photos and list them 
 
 ### Screens
 
+![Simulator Screen Shot - iPhone 13 Pro Max - 2023-03-15 at 00 32 51](https://user-images.githubusercontent.com/96179824/225157255-0b133bb5-9027-4a0c-8128-7fde64bb9009.png)
